@@ -94,7 +94,7 @@ how many women are assigned." However, when people hear that a project will
 take nine man-months, they sometimes assume that it probably can be three
 months for three random developers.
 
-<img src="https://raw.githubusercontent.com/stebunovd/blog/master/assets/man-month.png">
+<img src="https://raw.githubusercontent.com/stebunovd/blog/master/assets/man-month.png" width="572">
 
 *Source: The Mythical Man-Month by Frederick P. Brooks*
 
