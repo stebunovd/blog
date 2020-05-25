@@ -1,6 +1,6 @@
 # Contents
 
-- [On Estimates](blob/master/contents/On-Estimates.md)
+- [On Estimates](https://github.com/stebunovd/blog/blob/master/contents/On-Estimates.md)
 
 # About
 
