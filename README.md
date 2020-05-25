@@ -6,7 +6,7 @@
 
 Hi, I'm Denis. For more than 20 years, I've worked in software development in
 different roles - as a developer, engineering manager, product manager, and
-CEO/CTO. I work in at [ivelum](https://ivelum.com), and my current project is
+CEO/CTO. I work at [ivelum](https://ivelum.com), and my current project is
 [Teamplify](https://teamplify.com) - a productivity tool for software
 development teams.
 
