@@ -42,6 +42,11 @@ thing happens, just later. As a rule of thumb, you may think of deadlines as
 "the earliest dates when something can be delivered." So no matter whether they
 over- or underestimated, nothing ships until the deadline.
 
+<img src="https://raw.githubusercontent.com/stebunovd/blog/master/assets/peopleware-estimates.png" width="746">
+
+*Source: Peopleware by Tom DeMarko & Timothy Lister*
+
+
 Estimates slow the team down, and the more frequently you ask developers for
 estimates, the worse the effect becomes. If a team estimates all the work it’s
 doing, then the amount of time and energy it must spend on the estimating
