@@ -107,6 +107,8 @@ deadline, but fail the task altogether.
 
 ## Initial development is a minor cost
 
+<img src="https://raw.githubusercontent.com/stebunovd/blog/master/assets/development-maintenance.png">
+
 Arguably the biggest problem with estimates is that people routinely ask for
 initial development estimates, but rarely ask for estimates about the
 subsequent maintenance. Maintenance is huge. It takes up to
