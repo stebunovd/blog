@@ -44,7 +44,7 @@ over- or underestimated, nothing ships until the deadline.
 
 <img src="https://raw.githubusercontent.com/stebunovd/blog/master/assets/peopleware-estimates.png" width="746">
 
-*Source: Peopleware by Tom DeMarko & Timothy Lister*
+*Source: [Peopleware by Tom DeMarko & Timothy Lister](https://www.amazon.com/Peopleware-Productive-Projects-Tom-DeMarco/dp/0932633439)*
 
 
 Estimates slow the team down, and the more frequently you ask developers for
@@ -101,7 +101,7 @@ months for three random developers.
 
 <img src="https://raw.githubusercontent.com/stebunovd/blog/master/assets/man-month.png" width="572">
 
-*Source: The Mythical Man-Month by Frederick P. Brooks*
+*Source: [The Mythical Man-Month by Frederick P. Brooks](https://www.amazon.com/Mythical-Man-Month-Anniversary-Software-Engineering-ebook/dp/B00B8USS14/)*
 
 Men and months are not interchangeable, and not just because some work can't be
 done in parallel. Who is doing the work also matters. A senior developer who’s
