@@ -24,16 +24,18 @@ one blames them (and sometimes people do blame them). As the process repeats
 itself, they slowly learn to overestimate, because they don't want to fail.
 
 Counterintuitively, overestimating doesn't always help people to finish their
-work on time. Here's where psychology plays against us. Let's say you think a
-task will take a couple of days, but, given the uncertainty, you might need up
-to a week. You estimate a week, and your manager says "fine." Now you think -
-alright, I have plenty of time! As a result, in the first half of the week, you
-either work in a relaxed mode or shift your priorities to other tasks, because
-you know that you have plenty of time. As the timeline approaches, you start to
-realize that the task is not as simple as you’d initially thought and remember
-why you overestimated in the first place. So you work hard, maybe stay late,
-and finally, barely fit the work into the timeline you set for yourself. Next
-week, the same story happens again.
+work on time. This effect is known as
+[Parkinson's Law](https://en.wikipedia.org/wiki/Parkinson%27s_law), and here's
+where psychology plays against us. Let's say you think a task will take a
+couple of days, but, given the uncertainty, you might need up to a week. You
+estimate a week, and your manager says "fine." Now you think - alright, I have
+plenty of time! As a result, in the first half of the week, you either work in
+a relaxed mode or shift your priorities to other tasks, because you know that
+you have plenty of time. As the timeline approaches, you start to realize that
+the task is not as simple as you’d initially thought and remember why you
+overestimated in the first place. So you work hard, maybe stay late, and
+finally, barely fit the work into the timeline you set for yourself. Next week,
+the same story happens again.
 
 Ultimately, problems happen either way you estimate. If team members are under
 time pressure (often because they’ve underestimated), they may have to cut
