@@ -167,10 +167,10 @@ shouldn't be in the development queue, even for estimates.
 
 This one is probably the most challenging. As a manager or a team lead, you
 will likely deal with stakeholders who will wonder how long a project will take.
-If you ask them why they need this information, the most frequent reasons are
-either planning, or they simply want to know what to expect. We discussed
-planning above, now let's talk about expectations. It’s human nature to be
-concerned if something you care about is uncertain. Sometimes, it's your boss
+If you ask them why they need this information, they'll tell you it's necessary
+for planning or that they simply want to know what to expect. We discussed
+planning above, now let's turn to expectations. It’s human nature to be
+concerned if something you care about is uncertain. It may be your boss
 who’s asking, and it may be hard to say, "I don't know." Here's what you can
 try:
 
@@ -199,23 +199,28 @@ try:
 
 ## Conclusion
 
-To summarize, estimates look appealing and straightforward on the surface, but
-really they are misleading and obstructive to the workflow. It is natural for
+To summarize, while estimates look appealing and straightforward on the surface,
+really they are misleading and obstructive to the workflow. It’s natural for
 humans to simplify complicated things, but estimates simplify the perception of
-the development process far beyond reasonable. Scrum takes this
-over-simplification to the extreme with it's planning poker, velocity, and
+the development process far beyond what’s reasonable. Scrum takes this
+over-simplification to the extreme with its planning poker, velocity, and
 burn-down charts.
 
-There are two main reasons why estimates shouldn’t drive your decisions on
-whether to build or not:
+Most people would agree that, though estimates are imperfect, they are at least
+measurable. They can't imagine how to manage a project without having something
+measurable. Unfortunately, not everything that counts can be measured, and not
+everything that can be measured counts. In this post, I provided some practical
+advice from my experience of managing projects without estimates. Of course, I'm
+not saying that estimates are entirely useless; I'm just saying that most of the
+time, other more important factors should be at play. I’ve used this approach
+for years, and it’s worked well for our teams.
 
-* Initial development is just a minor part, maintenance is much bigger than
-  that. Every feature that you add to the product increases complexity and
-  slows development down further. These factors are much more important than
-  initial development estimates;
-* There are many ways to accomplish the same task. Communicating timeline
-  expectations from business and being flexible about the project scope is a
-  more reliable and practical way to launch projects on time and within budget.
+I realize that this advice is not for everyone. I worked with different
+organizations, big and small, and most of them used estimates in one form or
+another. At the same time, most organizations are far from efficient. The way
+the best teams operate is often different from the way the majority does.
+Perhaps the emphasis placed on estimates is one place where these differences
+lie.
 
 That's all I have for now. If you have any comments or questions - please feel
 free to reach me on [Twitter](https://twitter.com/dstebunov). This post may be
