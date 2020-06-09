@@ -167,11 +167,12 @@ shouldn't be in the development queue, even for estimates.
 
 This one is probably the most challenging. As a manager or a team lead, you
 will likely deal with stakeholders who will wonder how long a project will take.
-If you ask them why they need this information, they may give you different
-reasons, but the truth is usually that they "simply want to know." It’s human
-nature to be concerned if something you care about is uncertain. Sometimes, it's
-your boss who’s asking, and it may be hard to say, "I don't know." Here's what
-you can try:
+If you ask them why they need this information, the most frequent reasons are
+either planning, or they simply want to know what to expect. We discussed
+planning above, now let's talk about expectations. It’s human nature to be
+concerned if something you care about is uncertain. Sometimes, it's your boss
+who’s asking, and it may be hard to say, "I don't know." Here's what you can
+try:
 
 1. if the work’s already in the queue or in progress, ask what plans related to
    the completion of this work. Try to help them execute their plans. Sometimes,
