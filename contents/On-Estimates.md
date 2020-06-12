@@ -127,7 +127,8 @@ Instead, prioritize like a maniac, and work on only the features that make the
 most sense. This rarely happens when estimates drive project planning. In such
 projects, people tend to push features that take less time and postpone the
 ones that will take longer. As a consequence, the most important work can be
-postponed and the product becomes bloated with less important features.
+postponed and the product becomes bloated with less important features and
+quick hacks.
 
 
 ## How is it possible to plan a project without estimates?
