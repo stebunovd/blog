@@ -232,5 +232,6 @@ available here on Github.
 
 P.S. More on the topic:
 
+* [Dave Farley - How To Estimate Software Development Time (video, 17 min)](https://youtu.be/v21jg8wb1eU)
 * [BaseCamp - Fix Time and Budget, Flex Scope](https://basecamp.com/gettingreal/02.4-fix-time-and-budget-flex-scope)
 * [Richard Clayton - Software Estimation is a Losing Game](https://rclayton.silvrback.com/software-estimation-is-a-losing-game)
