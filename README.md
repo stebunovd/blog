@@ -1,6 +1,7 @@
 # Contents
 
 - [On Estimates](https://github.com/stebunovd/blog/blob/master/contents/On-Estimates.md)
+- [Is your manager a router or a moderator?](https://github.com/stebunovd/blog/blob/master/contents/Is-your-manager-a-router-or-moderator.md)
 
 # About
 
