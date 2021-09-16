@@ -18,6 +18,8 @@ wrote about, or my opinions may change. In such a case, I'd like to modify an
 old article instead of writing a new one. Change history is available on GitHub
 for anyone who may be interested.
 
+Twitter: [@dstebunov](https://twitter.com/dstebunov)
+
 # Free consultation
 
 This is an experiment that I'm running - free 45-min professional consultations
