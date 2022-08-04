@@ -20,18 +20,15 @@ for anyone who may be interested.
 
 Twitter: [@dstebunov](https://twitter.com/dstebunov)
 
-# Free consultation
+# Book a consultation
 
-This is an experiment that I'm running - free 45-min professional consultations
-on a bunch of IT topics. I'm not sure how long it will last, but if you can see 
-this message, it's still available. These are topics that I'm 
-ready to discuss:
+You can book a 45-min professional consultation with me on the following
+topics:
 - Software development life cycle;
+- Engineering management;
+- Remote work, HR in IT;
 - Software architecture;
 - DevOps;
-- IT project management;
-- Remote work and distributed teams;
-- HR in IT;
 - ... and whatever else related to the above.
 
 Check out the free dates and book here - 
