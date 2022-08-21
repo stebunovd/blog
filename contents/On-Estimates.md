@@ -119,7 +119,7 @@ deadline, but fail the task altogether.
 Arguably the biggest problem with estimates is that people routinely ask for
 initial development estimates, but rarely ask for estimates about the
 subsequent maintenance. Maintenance is huge. It takes up to
-[60-80%](https://stackoverflow.com/questions/3477706/development-cost-versus-maintenance-cost)
+[60-90%](https://www.google.com/search?q=software+initial+development+vs.+maintenance+costs)
 of the total project cost. Besides that, every feature that you add to the
 product increases complexity and makes further development slower. With this
 fact in mind, people should be very cautious about adding new features.
