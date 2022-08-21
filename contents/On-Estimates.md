@@ -203,7 +203,7 @@ try:
 To summarize, while estimates look appealing and straightforward on the surface,
 really they are misleading and obstructive to the workflow. It’s natural for
 humans to simplify complicated things, but estimates simplify the perception of
-the development process far beyond what’s reasonable. Scrum takes this
+the development process far beyond what’s reasonable. Scrum can take this
 over-simplification to the extreme with its planning poker, velocity, and
 burn-down charts.
 
