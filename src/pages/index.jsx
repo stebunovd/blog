@@ -26,22 +26,20 @@ export default function IndexPage() {
   return (
     <GenericLayout>
       <h1>Posts</h1>
-      {posts.map(({ node }) => (
-        <>
-          <h3 key={node.id}>
-            <Link to={node.frontmatter.slug}>
-              {node.frontmatter.title}
-            </Link>
-          </h3>
-          <p>
-            {node.frontmatter.description}
-            {'. '}
-            <Link to={node.frontmatter.slug}>
-              Read more...
-            </Link>
-          </p>
-        </>
-      ))}
+      {posts.map(({ node }) => [
+        <h3 key={node.id}>
+          <Link to={node.frontmatter.slug}>
+            {node.frontmatter.title}
+          </Link>
+        </h3>,
+        <p key={`desc-${node.id}`}>
+          {node.frontmatter.description}
+          {'. '}
+          <Link to={node.frontmatter.slug}>
+            Read more...
+          </Link>
+        </p>,
+      ])}
     </GenericLayout>
   );
 }
