@@ -18,9 +18,9 @@ export default function AboutPage() {
         }}
       />
       <p>
-        Hi, I&apos;m Denis. I got my first full-time job as a developer in 1999
-        and have been working in software development since then. I wear different
-        hats - a developer, an engineering manager, and a product manager.
+        Hi, I&apos;m Denis. I got my first full-time job as a developer in 1999 and have
+        been working in software development ever since then. I wear different hats -
+        a developer, an engineering manager, and a product manager.
       </p>
       <p>
         I&apos;m CTO at
@@ -34,7 +34,7 @@ export default function AboutPage() {
         teams.
       </p>
       <p>
-        You can find me on
+        I live in Vilnius, 🇱🇹Lithuania, and I also travel quite often. You can find me on
         {' '}
         <a href="https://twitter.com/dstebunov">
           Twitter
