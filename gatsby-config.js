@@ -65,5 +65,12 @@ module.exports = {
         exclude: ['node_modules', '.cache', 'public'],
       },
     },
+    {
+      resolve: 'gatsby-plugin-s3',
+      options: {
+        bucketName: 'stebunov.com',
+        region: 'eu-north-1',
+      },
+    },
   ],
 };

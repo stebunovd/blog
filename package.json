@@ -13,13 +13,14 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "lint": "eslint \"src/**/*.{js,jsx}\""
+    "deploy": "npm run -n \"-r dotenv/config\" && npm run build && gatsby-plugin-s3 deploy"
   },
   "dependencies": {
     "@gatsbyjs/reach-router": "2.0.1",
     "gatsby": "5.13.0",
     "gatsby-plugin-image": "3.13.0",
     "gatsby-plugin-mdx": "5.13.0",
+    "gatsby-plugin-s3": "0.4.1",
     "gatsby-plugin-sharp": "5.13.0",
     "gatsby-plugin-sitemap": "6.13.0",
     "gatsby-remark-images": "7.13.0",
