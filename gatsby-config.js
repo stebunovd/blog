@@ -42,7 +42,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'pages',
-        path: './src/pages/',
+        path: `${__dirname}/src/pages`,
       },
       __key: 'pages',
     },
@@ -50,7 +50,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'content',
-        path: './content/',
+        path: `${__dirname}/content/`,
       },
       __key: 'content',
     },
