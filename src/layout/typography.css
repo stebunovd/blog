@@ -1,0 +1,52 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  color: rgb(36, 36, 36);
+  font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.003em;
+  line-break: auto;
+  line-height: 32px;
+  margin: 48px auto;
+  max-width: 680px;
+  overflow-wrap: normal;
+  padding: 0 20px;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  word-break: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  line-height: 1.1em;
+}
+
+a {
+  color: inherit;
+}
+
+p, ul, ol {
+  margin: 0 0 2em;
+}
+
+li {
+  margin: 0 0 1em;
+}
+
+.topNavMenu {
+  float: right;
+  margin: 0;
+}
+
+.topNavMenu > li {
+  display: inline-block;
+  margin: 0 0.3em;
+}
+
+.footer {
+  float: right;
+  font-style: italic;
+  margin: 40px 0;
+}
