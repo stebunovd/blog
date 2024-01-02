@@ -34,20 +34,6 @@ export default function AboutPage() {
         teams.
       </p>
       <p>
-        This blog is built on GatsbyJS; the
-        {' '}
-        <a href="https://github.com/stebunovd/blog">
-          source code
-        </a>
-        {' '}
-        is available on GitHub. I also occasionally write for the
-        {' '}
-        <a href="https://teamplify.com/blog/">
-          Teamplify blog
-        </a>
-        .
-      </p>
-      <p>
         You can find me on
         {' '}
         <a href="https://twitter.com/dstebunov">
