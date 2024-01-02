@@ -1,0 +1,39 @@
+{
+  "name": "denis-stebunov-blog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "denis-stebunov-blog",
+  "author": "Denis Stebunov",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "lint": "eslint \"src/**/*.{js,jsx}\""
+  },
+  "dependencies": {
+    "@gatsbyjs/reach-router": "2.0.1",
+    "gatsby": "5.13.0",
+    "gatsby-plugin-image": "3.13.0",
+    "gatsby-plugin-mdx": "5.13.0",
+    "gatsby-plugin-sharp": "5.13.0",
+    "gatsby-plugin-sitemap": "6.13.0",
+    "gatsby-remark-images": "7.13.0",
+    "gatsby-source-filesystem": "5.13.0",
+    "gatsby-transformer-sharp": "5.13.0",
+    "prop-types": "15.8.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "1.69.6"
+  },
+  "devDependencies": {
+    "eslint": "8.56.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-webpack-plugin": "4.0.1",
+    "gatsby-plugin-eslint": "4.0.4"
+  }
+}

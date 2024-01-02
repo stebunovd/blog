@@ -1,0 +1,27 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "no-anonymous-exports-page-templates": "warn",
+    "limited-exports-page-templates": "warn",
+    "max-len": [2, 100, 4],
+    "import/order": ["error", {
+      "alphabetize": {"order": "asc"},
+      "groups": [
+        ["builtin", "external"],
+        ["sibling", "parent", "internal"],
+        "index"
+      ],
+      "newlines-between": "always",
+      "pathGroups": [
+        {
+          "pattern": "./*.scss",
+          "group": "index"
+        },
+        {
+          "pattern": "../*.scss",
+          "group": "index"
+        }
+      ]
+    }]
+  }
+}
