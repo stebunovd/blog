@@ -70,6 +70,12 @@ module.exports = {
       options: {
         bucketName: 'stebunov.com',
         region: 'eu-north-1',
+        acl: null,
+        mergeCachingParams: false,
+        generateRoutingRules: false,
+        generateIndexPageForRedirect: false,
+        generateMatchPathRewrites: false,
+        enableS3StaticWebsiteHosting: false,
       },
     },
   ],
