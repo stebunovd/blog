@@ -62,9 +62,9 @@ export default function GenericLayout({ children }) {
                 alt="RSS feed"
                 src={feedIcon}
                 style={{
-                  height: '25px',
+                  height: '28px',
                   verticalAlign: 'middle',
-                  width: '25px',
+                  width: '28px',
                 }}
               />
             </Link>
@@ -80,7 +80,7 @@ export default function GenericLayout({ children }) {
         <a href="https://twitter.com/dstebunov">
           Follow me on Twitter
         </a>
-        {' or subscribe to the '}
+        {' or subscribe to '}
         <Link to="/rss.xml">
           RSS feed
         </Link>
