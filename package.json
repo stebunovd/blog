@@ -13,7 +13,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "cfinvalidate": "node deploy/cfinvalidate.js -i E2KMNX4POSU4ZD -p \\\"/*\\\"",
+    "cfinvalidate": "node deploy/cfinvalidate.js -i E2KMNX4POSU4ZD -p \"/*\"",
     "deploy": "npm run -n \"-r dotenv/config\" && npm run build && gatsby-plugin-s3 deploy && npm run cfinvalidate"
   },
   "dependencies": {
