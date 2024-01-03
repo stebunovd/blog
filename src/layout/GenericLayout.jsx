@@ -66,13 +66,13 @@ export default function GenericLayout({ children }) {
         <a href="https://twitter.com/dstebunov">
           Follow me on Twitter
         </a>
-        <br />
-        <br />
-        All content licensed under
-        {' '}
-        <a href="https://creativecommons.org/licenses/by/4.0/">
-          CC BY 4.0
-        </a>
+        <div style={{ marginTop: '0.7em' }}>
+          All content licensed under
+          {' '}
+          <a href="https://creativecommons.org/licenses/by/4.0/">
+            CC BY 4.0
+          </a>
+        </div>
       </footer>
     </>
   );
