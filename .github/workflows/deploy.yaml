@@ -4,6 +4,22 @@ on:
     branches: [master]
   workflow_dispatch:
 jobs:
+  notify-build-start:
+    if: ${{ github.event_name == 'push' }}
+    runs-on: ubuntu-latest
+    steps:
+      # Send build notifications to Slack
+      - uses: ivelum/github-action-slack-notify-build@v1.6.0
+        id: slack
+        with:
+          channel_id: C0528Q7QK3M
+          status: STARTED
+          color: '#ee9b00'
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+    outputs:
+      status_message_id: ${{ steps.slack.outputs.message_id }}
+
   deploy:
     runs-on: ubuntu-latest
     steps:
@@ -15,3 +31,30 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run: npm install && npm run deploy
+
+      # Send notification on build or deploy failure
+      - name: Notify slack fail
+        uses: ivelum/github-action-slack-notify-build@v1.6.0
+        if: failure()
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+        with:
+          channel_id: C0528Q7QK3M
+          status: FAILED
+          color: '#d7263d'
+
+  notify-build-success:
+    if: ${{ github.event_name == 'push' }}
+    needs: [ deploy, notify-build-start ]
+    runs-on: ubuntu-latest
+    steps:
+      # Send notification on build success
+      - name: Notify slack success
+        uses: ivelum/github-action-slack-notify-build@v1.6.0
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+        with:
+          message_id: ${{ needs.notify-build-start.outputs.status_message_id }}
+          channel_id: C0528Q7QK3M
+          status: SUCCESS
+          color: '#16db65'
