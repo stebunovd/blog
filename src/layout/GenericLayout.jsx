@@ -2,6 +2,7 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import feedIcon from './feed.svg';
 import './typography.css';
 
 export default function GenericLayout({ children }) {
@@ -55,6 +56,19 @@ export default function GenericLayout({ children }) {
       <nav>
         <Link to="/">Denis Stebunov&apos;s blog</Link>
         <ul className="topNavMenu">
+          <li>
+            <Link to="/rss.xml">
+              <img
+                alt="RSS feed"
+                src={feedIcon}
+                style={{
+                  height: '25px',
+                  verticalAlign: 'middle',
+                  width: '25px',
+                }}
+              />
+            </Link>
+          </li>
           <li><Link to="/about">About</Link></li>
         </ul>
       </nav>
@@ -66,6 +80,10 @@ export default function GenericLayout({ children }) {
         <a href="https://twitter.com/dstebunov">
           Follow me on Twitter
         </a>
+        {' or subscribe to the '}
+        <Link to="/rss.xml">
+          RSS feed
+        </Link>
         <div style={{ marginTop: '0.7em' }}>
           All content licensed under
           {' '}

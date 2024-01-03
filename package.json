@@ -20,6 +20,7 @@
     "@gatsbyjs/reach-router": "2.0.1",
     "commander": "11.1.0",
     "gatsby": "5.13.0",
+    "gatsby-plugin-feed": "5.13.0",
     "gatsby-plugin-image": "3.13.0",
     "gatsby-plugin-mdx": "5.13.0",
     "gatsby-plugin-s3": "0.4.1",

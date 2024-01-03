@@ -38,11 +38,12 @@ li {
 .topNavMenu {
   float: right;
   margin: 0;
+  padding: 0;
 }
 
 .topNavMenu > li {
   display: inline-block;
-  margin: 0 0.3em;
+  margin: 0 0.6em;
 }
 
 .footer {

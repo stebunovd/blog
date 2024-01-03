@@ -78,5 +78,43 @@ module.exports = {
         enableS3StaticWebsiteHosting: false,
       },
     },
+    {
+      resolve: 'gatsby-plugin-feed',
+      options: {
+        feeds: [
+          {
+            serialize: ({ query: { site, allMdx } }) => {
+              return allMdx.edges.map(({ node }) => {
+                return Object.assign({}, node.frontmatter, {
+                  description: node.frontmatter.description,
+                  date: node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + node.frontmatter.slug,
+                  guid: site.siteMetadata.siteUrl + node.frontmatter.slug,
+                });
+              });
+            },
+            query: `
+              {
+                allMdx(sort: { frontmatter: { date: DESC }}) {
+                  edges {
+                    node {
+                      id
+                      frontmatter {
+                        date(formatString: "MMMM DD, YYYY")
+                        description
+                        slug
+                        title
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: '/rss.xml',
+            title: 'Denis Stebunov\'s blog - RSS',
+          },
+        ],
+      },
+    },
   ],
 };
