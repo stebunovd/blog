@@ -13,10 +13,12 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "npm run -n \"-r dotenv/config\" && npm run build && gatsby-plugin-s3 deploy"
+    "cfinvalidate": "node deploy/cfinvalidate.js -i E2KMNX4POSU4ZD -p \\\"/*\\\"",
+    "deploy": "npm run -n \"-r dotenv/config\" && npm run build && gatsby-plugin-s3 deploy && npm run cfinvalidate"
   },
   "dependencies": {
     "@gatsbyjs/reach-router": "2.0.1",
+    "commander": "11.1.0",
     "gatsby": "5.13.0",
     "gatsby-plugin-image": "3.13.0",
     "gatsby-plugin-mdx": "5.13.0",
