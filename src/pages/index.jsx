@@ -7,7 +7,7 @@ import SEO from '../layout/SEO';
 export default function IndexPage() {
   const data = useStaticQuery(graphql`
     query PostsQuery {
-      allMdx(sort: { frontmatter: { date: DESC }}) {
+      allMarkdownRemark(sort: { frontmatter: { date: DESC }}) {
         edges {
           node {
             id
@@ -22,7 +22,7 @@ export default function IndexPage() {
       }
     }
   `);
-  const posts = data.allMdx.edges;
+  const posts = data.allMarkdownRemark.edges;
   return (
     <GenericLayout>
       <h1>Posts</h1>

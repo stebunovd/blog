@@ -26,9 +26,9 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
-      resolve: 'gatsby-plugin-mdx',
+      resolve: 'gatsby-transformer-remark',
       options: {
-        gatsbyRemarkPlugins: [
+        plugins: [
           {
             resolve: 'gatsby-remark-images',
             options: {
@@ -83,19 +83,20 @@ module.exports = {
       options: {
         feeds: [
           {
-            serialize: ({ query: { site, allMdx } }) => {
-              return allMdx.edges.map(({ node }) => {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(({ node }) => {
                 return Object.assign({}, node.frontmatter, {
                   description: node.frontmatter.description,
                   date: node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + node.frontmatter.slug,
                   guid: site.siteMetadata.siteUrl + node.frontmatter.slug,
+                  custom_elements: [{ 'content:encoded': node.html }],
                 });
               });
             },
             query: `
               {
-                allMdx(sort: { frontmatter: { date: DESC }}) {
+                allMarkdownRemark(sort: { frontmatter: { date: DESC }}) {
                   edges {
                     node {
                       id
@@ -105,6 +106,7 @@ module.exports = {
                         slug
                         title
                       }
+                      html
                     }
                   }
                 }
