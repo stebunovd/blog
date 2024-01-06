@@ -11,3 +11,4 @@ disableKinds = ['taxonomy', 'term']
   [[deployment.targets]]
   name = "s3"
   URL = "s3://stebunov.com?region=eu-north-1"
+  cloudFrontDistributionID = "E2KMNX4POSU4ZD"
