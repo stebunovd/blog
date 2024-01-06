@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   color: rgb(36, 36, 36);
@@ -28,9 +32,27 @@ article > h1 {
   margin: 0.67em 0;
 }
 
+article > h2 {
+  margin: -0.83em 0 0.83em;
+  padding: 0.83em 0 0;
+}
+
 a {
   color: inherit;
   cursor: pointer;
+}
+
+a.anchor {
+  text-decoration: none;
+}
+
+a.anchor:hover {
+  text-decoration: underline;
+}
+
+a.anchor:hover:after {
+  color: #c0c0c0;
+  content: ' ¶';
 }
 
 p, ul, ol {
