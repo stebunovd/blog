@@ -4,6 +4,7 @@ html {
 
 body {
   -webkit-font-smoothing: antialiased;
+  background-color: #fff;
   color: rgb(36, 36, 36);
   font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 20px;
@@ -98,4 +99,15 @@ img {
   font-size: 0.9em;
   font-style: italic;
   margin: 15px 0 40px;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000;
+    color: rgb(219, 219, 219);
+  }
+
+  a.anchor:hover:after {
+    color: rgb(110, 110, 110);
+  }
 }
