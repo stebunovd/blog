@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{{ partial "meta.html" (dict
+    "title" .Site.Title
+    "description" "Thoughts about software development and engineering management"
+    "url" .Page.Permalink
+  ) }}
+  <link rel="alternate" type="application/rss+xml" title="Denis Stebunov&apos;s blog" href="/index.xml" />
+</head>
+<body>
+{{ partial "nav.html" . }}
+<h1>Posts</h1>
+{{ range .Pages }}
+  {{ if ne .Layout "about" }}
+  <a href="{{ .RelPermalink }}"><h3>{{ .Title }}</h3></a>
+  <p>
+    {{ .Description }}. <a href="{{ .RelPermalink }}">Read more...</a>
+  </p>
+  {{ end }}
+{{ end }}
+{{ partial "footer.html" . }}
+</body>
+</html>

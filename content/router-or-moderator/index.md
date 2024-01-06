@@ -1,8 +1,8 @@
 ---
 title: Is your manager a router or a moderator?
 description: In software engineering, communication around the manager organizes itself into two common modes – either a "router", or a "moderator"
-date: 2021-09-15
-slug: /router-or-moderator
+date: 2021-09-15T16:21:00+0300
+slug: router-or-moderator
 ---
 
 Whether directly or indirectly, software engineering teams need to communicate
@@ -27,7 +27,7 @@ Each strategy has pros and cons.
 
 ## Router
 
-![Manager as a router](./manager-router.png)
+![Manager as a router](manager-router.png)
 
 In *router* mode, the manager is responsible for all communication between the
 engineering team and the stakeholders. Centralizing communication this way
@@ -68,7 +68,7 @@ Cons:
 
 ## Moderator
 
-![Manager as a moderator](./manager-moderator.png)
+![Manager as a moderator](manager-moderator.png)
 
 An alternative approach is *moderator* mode, where the manager supervises while
 stakeholders communicate directly with engineering team members. Everyone is

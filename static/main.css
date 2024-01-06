@@ -23,8 +23,14 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.1em;
 }
 
+article > h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
 a {
   color: inherit;
+  cursor: pointer;
 }
 
 p, ul, ol {
@@ -33,6 +39,19 @@ p, ul, ol {
 
 li {
   margin: 0 0 1em;
+}
+img {
+  max-width: 680px;
+}
+
+.github {
+  border: 0;
+  color: #fff;
+  fill: #151513;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1
 }
 
 .topNavMenu {
@@ -43,7 +62,13 @@ li {
 
 .topNavMenu > li {
   display: inline-block;
-  margin: 0 0.6em;
+  margin: 0 0.5em;
+}
+
+.topNavMenu > li img {
+  height: 28px;
+  width: 28px;
+  vertical-align: middle;
 }
 
 .footer {

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{{ partial "meta.html" (dict
+    "title" .Page.Title
+    "description" .Page.Description
+    "url" .Page.Permalink
+  ) }}
+</head>
+<body>
+{{ partial "nav.html" . }}
+<article>
+  <h1>{{ .Title }}</h1>
+  <p>
+    <i>
+      <time datetime="{{ .Date | time.Format "2006-01-02" }}">
+        {{ .Date | time.Format ":date_medium" }}
+      </time>
+    </i>
+  </p>
+  {{ .Content }}
+</article>
+<p>
+  <a href="/">&lt;&lt; Back to all posts</a>
+</p>
+{{ partial "footer.html" . }}
+</body>
+</html>

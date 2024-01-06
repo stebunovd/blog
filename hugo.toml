@@ -1,0 +1,13 @@
+baseURL = 'https://stebunov.com/'
+languageCode = 'en-us'
+title = "Denis Stebunov's blog"
+disableKinds = ['taxonomy', 'term']
+
+[output]
+  home = ['html', 'rss']
+  section = ['html']
+
+[deployment]
+  [[deployment.targets]]
+  name = "s3"
+  URL = "s3://stebunov.com?region=eu-north-1"
