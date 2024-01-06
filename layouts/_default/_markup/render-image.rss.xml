@@ -1,0 +1,1 @@
+<img src="{{ .Page.Permalink }}{{ .Destination }}" alt="{{ .Title }}">
