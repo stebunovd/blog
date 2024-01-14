@@ -49,7 +49,7 @@ over- or underestimated, nothing ships until the deadline.
 
 ![Productivity by Estimation Approach](peopleware-estimates.png)
 
-*Source: [Peopleware by Tom DeMarko & Timothy Lister](https://www.amazon.com/Peopleware-Productive-Projects-Tom-DeMarco/dp/0932633439)*
+*Source: [Peopleware by Tom DeMarko and Timothy Lister](https://www.amazon.com/Peopleware-Productive-Projects-Tom-DeMarco/dp/0932633439)*
 
 
 Estimates slow the team down, and the more frequently you ask developers for
