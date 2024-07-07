@@ -47,7 +47,7 @@ thing happens, just later. As a rule of thumb, you may think of deadlines as
 "the earliest dates when something can be delivered." So no matter whether they
 over- or underestimated, nothing ships until the deadline.
 
-![Productivity by Estimation Approach](peopleware-estimates.png)
+[![Productivity by Estimation Approach](peopleware-estimates.png)](peopleware-estimates.png)
 
 *Source: [Peopleware by Tom DeMarko and Timothy Lister](https://www.amazon.com/Peopleware-Productive-Projects-Tom-DeMarco/dp/0932633439)*
 
@@ -76,7 +76,7 @@ out-of-the-box product, or exist as a library or framework. Therefore, in most
 cases, developers have to provide estimates for tasks that have a high degree
 of uncertainty.
 
-![Figuring out what to do – Getting it done](hill-concept.png)
+[![Figuring out what to do – Getting it done](hill-concept.png)](hill-concept.png)
 
 *Source: [Show Progress | Shape Up by BaseCamp](https://basecamp.com/shapeup/3.4-chapter-12)*
 
@@ -104,7 +104,7 @@ how many women are assigned." However, when people hear that a project will
 take nine man-months, they sometimes assume that it probably can be three
 months for three random developers.
 
-![Mythical Man-Month](man-month.png)
+[![Mythical Man-Month](man-month.png)](man-month.png)
 
 *Source: [The Mythical Man-Month by Frederick P. Brooks](https://www.amazon.com/Mythical-Man-Month-Anniversary-Software-Engineering-ebook/dp/B00B8USS14/)*
 
@@ -117,7 +117,7 @@ deadline, but fail the task altogether.
 
 ## Initial development is a minor cost
 
-![Maintenance vs. initial development](dev-maintenance.png)
+[![Maintenance vs. initial development](dev-maintenance.png)](dev-maintenance.png)
 
 Arguably the biggest problem with estimates is that people routinely ask for
 initial development estimates, but rarely ask for estimates about the

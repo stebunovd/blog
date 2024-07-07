@@ -75,7 +75,7 @@ designer. For example, you can use a rapid wireframing tool like
 quickly without spending time on minor visual details. Or, use a whiteboard or
 good old pencil and paper. Any sketch is better than nothing.
 
-![Low-fidelity Balsamiq wireframes](balsamiq.png)
+[![Low-fidelity Balsamiq wireframes](balsamiq.png)](balsamiq.png)
 *Low-fidelity [Balsamiq](https://balsamiq.com) wireframes*
 
 
@@ -113,7 +113,7 @@ diagram. ER diagrams are arguably the most useful part of the UML
 specification. You may skip everything else in UML, but if you're working with
 relational databases - don't skip ER diagrams :)
 
-![ER diagram example](dbdiagram.png)
+[![ER diagram example](dbdiagram.png)](dbdiagram.png)
 *Credit: [dbdiagram.io](https://dbdiagram.io)*
 
 ## Summary
