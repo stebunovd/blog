@@ -67,6 +67,17 @@ img {
   max-width: 680px;
 }
 
+blockquote {
+  background-color: #f0f0f0;
+  border-left: solid 4px #c0c0c0;
+  margin: 1em 0 2em 2em;
+  padding: 0.5em 1em;
+}
+
+blockquote > p:last-child {
+  margin-bottom: 0;
+}
+
 .github {
   border: 0;
   color: #fff;
