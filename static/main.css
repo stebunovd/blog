@@ -64,7 +64,7 @@ li {
   margin: 0 0 1em;
 }
 img {
-  max-width: 680px;
+  max-width: 100%;
 }
 
 blockquote {
