@@ -78,6 +78,9 @@ good old pencil and paper. Any sketch is better than nothing.
 [![Low-fidelity Balsamiq wireframes](balsamiq.png)](balsamiq.png)
 *Low-fidelity [Balsamiq](https://balsamiq.com) wireframes*
 
+And if you're building an API or a command-line interface, your design would be
+the documentation and usage examples. It doesn't have to be polished at this 
+stage but should include at least the most important use cases.
 
 ## #3 - Data structures
 
