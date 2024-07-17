@@ -26,7 +26,7 @@ buckets that I thought it was worth treating them as a checklist:
 Sometimes, developers skip these fundamental questions and jump right into the
 code. It's understandable. They're eager to do what they love, and also, isn't
 it the product manager's job to think about such questions? Well, yes, it 
-certainly is; but that doesn't mean this information is useless for us 
+certainly is; but that doesn't mean this information is useless for us,
 developers.
 
 While working on a feature, we face many decisions on all levels, from "How do 
