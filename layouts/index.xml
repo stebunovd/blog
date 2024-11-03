@@ -58,6 +58,7 @@
     {{- end }}
     {{- range $pages }}
     {{- if ne .Layout "about" }}
+    {{- if not .Params.external }}
     <item>
       <title>{{ .Title }}</title>
       <link>{{ .Permalink }}</link>
@@ -66,6 +67,7 @@
       <guid>{{ .Permalink }}</guid>
       <description>{{ .Content | transform.XMLEscape | safeHTML }}</description>
     </item>
+    {{- end }}
     {{- end }}
     {{- end }}
   </channel>

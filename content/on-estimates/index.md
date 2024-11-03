@@ -1,6 +1,6 @@
 ---
 title: On Estimates
-description: Since we began developing software, we’ve looked for ways to reliably estimate our development time. Now, some 60+ years later, we've gotten no better at it
+description: Since we began developing software, we’ve looked for ways to reliably estimate our development time. Now, some 60+ years later, we've gotten no better at it.
 date: 2020-05-26T12:05:00+0300
 slug: on-estimates
 ---

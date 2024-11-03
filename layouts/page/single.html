@@ -12,11 +12,9 @@
 <article>
   <h1>{{ .Title }}</h1>
   <p>
-    <i>
-      <time datetime="{{ .Date | time.Format "2006-01-02" }}">
-        {{ .Date | time.Format ":date_medium" }}
-      </time>
-    </i>
+    <time datetime="{{ .Date | time.Format "2006-01-02" }}">
+      {{ .Date | time.Format ":date_medium" }}
+    </time>
   </p>
   {{ .Content }}
 </article>

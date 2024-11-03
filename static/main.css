@@ -56,8 +56,26 @@ a.anchor:hover:after {
   content: ' ¶';
 }
 
+a.external {
+  color: #66c43b;
+}
+
+a.external::after {
+  background-image: url('/external.svg');
+  background-size: 1em 1em;
+  content: '';
+  display: inline-block;
+  height: 1em;
+  margin-left: 0.3em;
+  width: 1em;
+}
+
 p, ul, ol {
   margin: 0 0 2em;
+}
+
+p.description {
+  margin: 0 0 0.5em;
 }
 
 li {
@@ -76,6 +94,17 @@ blockquote {
 
 blockquote > p:last-child {
   margin-bottom: 0;
+}
+
+hr {
+  border: solid 1px #e5e5e5;
+  margin: 0 0 2em;
+}
+
+time {
+  display: inline-block;
+  font-style: italic;
+  margin-bottom: 0.5em;
 }
 
 .github {

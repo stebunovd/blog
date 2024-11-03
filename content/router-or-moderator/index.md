@@ -1,6 +1,6 @@
 ---
 title: Is your manager a router or a moderator?
-description: In software engineering, communication around the manager organizes itself into two common modes – either a "router", or a "moderator"
+description: In software engineering, communication around the manager organizes itself into two common modes – either a "router", or a "moderator".
 date: 2021-09-15T16:21:00+0300
 slug: router-or-moderator
 ---
