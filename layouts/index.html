@@ -16,7 +16,8 @@
   {{- $read_more := "Read more..." }}
   {{- if $page.Params.external }}
     {{- $url = $page.Params.external }}
-    {{- $read_more = "Read on Teamplify" }}
+    {{- $host := (urls.Parse $url).Hostname }}
+    {{- $read_more = printf "Read on %s" $host }}
   {{- end }}
   {{- if $index }}<hr>{{ end }}
   <a href="{{ $url }}"><h3>{{ $page.Title }}</h3></a>
