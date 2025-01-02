@@ -27,7 +27,7 @@ Each strategy has pros and cons.
 
 ## Router
 
-[![Manager as a router](manager-router.png)](manager-router.png)
+![Manager as a router](manager-router.png)
 
 In *router* mode, the manager is responsible for all communication between the
 engineering team and the stakeholders. Centralizing communication this way
@@ -68,7 +68,7 @@ Cons:
 
 ## Moderator
 
-[![Manager as a moderator](manager-moderator.png)](manager-moderator.png)
+![Manager as a moderator](manager-moderator.png)
 
 An alternative approach is *moderator* mode, where the manager supervises while
 stakeholders communicate directly with engineering team members. Everyone is
