@@ -1,74 +1,34 @@
-{{- /* Deprecate site.Author.email in favor of site.Params.author.email */}}
-{{- $authorEmail := "" }}
-{{- with site.Params.author }}
-  {{- if reflect.IsMap . }}
-    {{- with .email }}
-      {{- $authorEmail = . }}
-    {{- end }}
-  {{- end }}
-{{- else }}
-  {{- with site.Author.email }}
-    {{- $authorEmail = . }}
-    {{- warnf "The author key in site configuration is deprecated. Use params.author.email instead." }}
-  {{- end }}
+{{- $pages := (where .RegularPages "Params.external" nil).ByDate.Reverse }}
+{{- $pages = where $pages "Layout" "ne" "about" }}
+{{- if not hugo.IsDevelopment }}
+  {{- $pages = where $pages "Params.sitemap.disable" "ne" true }}
 {{- end }}
 
-{{- /* Deprecate site.Author.name in favor of site.Params.author.name */}}
-{{- $authorName := "" }}
-{{- with site.Params.author }}
-  {{- if reflect.IsMap . }}
-    {{- with .name }}
-      {{- $authorName = . }}
-    {{- end }}
-  {{- else }}
-    {{- $authorName  = . }}
-  {{- end }}
-{{- else }}
-  {{- with site.Author.name }}
-    {{- $authorName = . }}
-    {{- warnf "The author key in site configuration is deprecated. Use params.author.name instead." }}
-  {{- end }}
-{{- end }}
-
-{{- $pctx := . }}
-{{- if .IsHome }}{{ $pctx = .Site }}{{ end }}
-{{- $pages := slice }}
-{{- if or $.IsHome $.IsSection }}
-{{- $pages = $pctx.RegularPages }}
-{{- else }}
-{{- $pages = $pctx.Pages }}
-{{- end }}
 {{- $limit := .Site.Config.Services.RSS.Limit }}
 {{- if ge $limit 1 }}
-{{- $pages = $pages | first $limit }}
+  {{- $pages = $pages | first $limit }}
 {{- end }}
+
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ if eq .Title .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} on {{ end }}{{ .Site.Title }}{{ end }}</title>
+    <title>{{ .Site.Title }}</title>
     <link>{{ .Permalink }}</link>
-    <description>Recent content {{ if ne .Title .Site.Title }}{{ with .Title }}in {{ . }} {{ end }}{{ end }}on {{ .Site.Title }}</description>
-    <language>{{ site.Language.LanguageCode }}</language>{{ with $authorEmail }}
-    <managingEditor>{{.}}{{ with $authorName }} ({{ . }}){{ end }}</managingEditor>{{ end }}{{ with $authorEmail }}
-    <webMaster>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</webMaster>{{ end }}{{ with .Site.Copyright }}
-    <copyright>{{ . }}</copyright>{{ end }}{{ if not .Date.IsZero }}
-    <lastBuildDate>{{ .Date.Format "2006-01-02T15:04:05-0700" | safeHTML }}</lastBuildDate>{{ end }}
+    <description>Thoughts about engineering and engineering management</description>
+    <language>{{ site.Language.LanguageCode }}</language>
+    {{ with .Site.Copyright }}<copyright>{{ . }}</copyright>{{ end }}
+    {{ if not .Date.IsZero }}<lastBuildDate>{{ .Date.Format "2006-01-02T15:04:05-0700" | safeHTML }}</lastBuildDate>{{ end }}
     {{- with .OutputFormats.Get "RSS" }}
     {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
     {{- end }}
     {{- range $pages }}
-    {{- if ne .Layout "about" }}
-    {{- if not .Params.external }}
     <item>
       <title>{{ .Title }}</title>
       <link>{{ .Permalink }}</link>
       <pubDate>{{ .Date.Format "2006-01-02T15:04:05-0700" | safeHTML }}</pubDate>
-      {{- with $authorEmail }}<author>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</author>{{ end }}
       <guid>{{ .Permalink }}</guid>
       <description>{{ .Content | transform.XMLEscape | safeHTML }}</description>
     </item>
-    {{- end }}
-    {{- end }}
     {{- end }}
   </channel>
 </rss>
