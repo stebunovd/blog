@@ -1,0 +1,30 @@
+{{- $webp := false }}
+{{- $preview := false }}
+{{- $previewWebp := false }}
+{{- if ne .Img.MediaType.SubType "svg" }}
+  {{- $webp = .Img.Process "webp" }}
+  {{- if gt .Img.Width .Width }}
+    {{- $preview = .Img.Resize (printf "%dx" .Width) }}
+    {{- if $webp }}
+      {{- $previewWebp = $preview.Process "webp" }}
+    {{ end }}
+  {{- end }}
+{{- end }}
+{{ $imgTag := "<img" }}
+{{- with .Class }}
+  {{- $imgTag = printf "<img class=\"%s\"" . }}
+{{- end }}
+{{- $imgTag = $imgTag | safeHTML }}
+{{- if $webp }}
+  <picture>
+  {{- if $preview }}
+    <source srcset="{{ $previewWebp.RelPermalink }} 1x, {{ $webp.RelPermalink }} 2x" type="image/webp">
+    {{ $imgTag }} src="{{ $preview.RelPermalink }}" srcset="{{ .Img.RelPermalink }} 2x" alt="{{ .Alt }}">
+  {{- else }}
+    <source srcset="{{ $webp.RelPermalink }}" type="image/webp">
+    {{ $imgTag }} src="{{ .Img.RelPermalink }}" alt="{{ .Alt }}">
+  {{- end }}
+  </picture>
+{{- else }}
+  {{ $imgTag }} src="{{ .Img.RelPermalink }}" alt="{{ .Alt }}">
+{{- end }}

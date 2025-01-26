@@ -1,1 +1,29 @@
-<a href="{{ .Destination }}"><img src="{{ .Destination }}" alt="{{ .Title }}"></a>
+{{/*
+  The maximum image width is set to 680px (matching the maximum <body> width
+  defined in CSS).
+*/}}
+{{- $previewWidth := 680 }}
+{{- $img := .Page.Resources.Get .Destination }}
+{{- $width := "" }}
+{{- $height := "" }}
+{{- if ne $img.MediaType.SubType "svg" }}
+  {{- $previewWidth2x := math.Mul $previewWidth 2 }}
+  {{- $previewWidth4x := math.Mul $previewWidth 4 }}
+  {{- if gt $img.Width $previewWidth4x }}
+    {{- $img = $img.Resize (printf "%dx" $previewWidth4x) }}
+  {{- end }}
+  {{- if lt $img.Width $previewWidth2x }}
+    {{- $width = $img.Width }}
+    {{- $height = $img.Height }}
+  {{- else }}
+    {{- $width = $previewWidth2x }}
+    {{- $height = cast.ToInt (math.Mul $img.Height (math.Div (cast.ToFloat $previewWidth2x) $img.Width)) }}
+  {{- end }}
+{{- end }}
+<a href="{{ .Destination }}" data-pswp-width="{{ $width }}" data-pswp-height="{{ $height }}">
+{{- partial "image.html" (dict
+  "Img" $img
+  "Alt" .Text
+  "Width" $previewWidth
+  ) }}
+</a>
