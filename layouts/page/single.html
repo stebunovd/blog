@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-{{ partial "meta.html" (dict
-    "title" .Page.Title
-    "description" .Page.Description
-    "url" .Page.Permalink
-  ) }}
-</head>
-<body>
-{{ partial "nav.html" . }}
-<article>
-  <h1>{{ .Title }}</h1>
+{{- if .Page.Params.external }}
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>{{ .Page.Title }}</title>
+    <meta name="robots" content="noindex">
+    <meta http-equiv="refresh" content="0; {{ .Page.Params.external }}">
+  </head>
+  <body>
+    <br /><br />
+    <center>
+      You'll be redirected in a moment. If it doesn't happen automatically,
+      please <a href="{{ .Page.Params.external }}">click here</a>.</center>
+  </body>
+{{- else }}
+  <head>
+  {{ partial "meta.html" (dict
+      "title" .Page.Title
+      "description" .Page.Description
+      "url" .Page.Permalink
+    ) }}
+  </head>
+  <body>
+  {{ partial "nav.html" . }}
+  <article>
+    <h1>{{ .Title }}</h1>
+    <p>
+      <time datetime="{{ .Date | time.Format "2006-01-02" }}">
+        {{ .Date | time.Format ":date_medium" }}
+      </time>
+    </p>
+    {{ .Content }}
+  </article>
   <p>
-    <time datetime="{{ .Date | time.Format "2006-01-02" }}">
-      {{ .Date | time.Format ":date_medium" }}
-    </time>
+    <a href="/">&lt;&lt; Back to all posts</a>
   </p>
-  {{ .Content }}
-</article>
-<p>
-  <a href="/">&lt;&lt; Back to all posts</a>
-</p>
-{{ partial "footer.html" . }}
-</body>
+  {{ partial "footer.html" . }}
+  </body>
+{{- end }}
 </html>
