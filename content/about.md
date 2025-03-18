@@ -10,6 +10,10 @@ I'm CTO at [ivelum](https://ivelum.com), where we build custom software for star
 enterprises, and I also work on [Teamplify](https://teamplify.com) – a team management suite for
 engineering teams.
 
+Besides writing [blog posts](/), I recently started to make 
+🎥 [Youtube videos](https://www.youtube.com/@ivelum/videos) for the
+[@ivelum](https://www.youtube.com/@ivelum) channel - please check it out.
+
 I live in Vilnius, 🇱🇹Lithuania, and I also travel quite often. You can find me on 
 [Twitter](https://twitter.com/dstebunov), [GitHub](https://github.com/stebunovd), 
 [LinkedIn](https://www.linkedin.com/in/denis-stebunov/),
