@@ -24,10 +24,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: peaceiris/actions-hugo@v3
+      - uses: noesya/actions-hugo@32321cc1a27c55732a48f7690626d74c238b01cb
         with:
-          hugo-version: '0.136.5'
-          extended: true
+          hugo-version: '0.147.3'
+          withdeploy: true
       - env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
