@@ -11,7 +11,9 @@
 {{ partial "nav.html" . }}
 <h1>Denis Stebunov</h1>
 <img alt="Denis Stebunov" src="/photo.jpeg" width="200" height="200" style="margin-bottom: 1em">
-{{ .Content }}
+{{- with .GetPage "about" }}
+  {{ .Content }}
+{{ end }}
 <p><br></p>
 {{- with (index (where .Pages "Layout" "ne" "about") 0) }}
   <h2>The latest post <a href="/posts/">(see more...)</a></h2>
