@@ -107,6 +107,19 @@ time {
   margin-bottom: 0.5em;
 }
 
+nav:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+nav {
+  zoom: 1;
+}
+
 .github {
   border: 0;
   color: #fff;
@@ -117,18 +130,29 @@ time {
   z-index: -1
 }
 
-.topNavMenu {
+.topLeftMenu {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.topLeftMenu > li {
+  display: inline-block;
+  margin: 0 1em 0 0;
+}
+
+.topRightMenu {
   float: right;
   margin: 0;
   padding: 0;
 }
 
-.topNavMenu > li {
+.topRightMenu > li {
   display: inline-block;
   margin: 0 0.5em;
 }
 
-.topNavMenu > li img {
+.topRightMenu > li img {
   height: 28px;
   width: 28px;
   vertical-align: middle;

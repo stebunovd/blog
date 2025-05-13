@@ -1,36 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-{{- partial "meta.html" (dict
-    "title" .Site.Title
-    "description" "Thoughts about software development and engineering management"
+{{ partial "meta.html" (dict
+    "title" "Denis Stebunov – about"
+    "description" "CTO at ivelum, Teamplify founder"
     "url" .Page.Permalink
   ) }}
-  <link rel="alternate" type="application/rss+xml" title="Denis Stebunov&apos;s blog" href="/index.xml" />
 </head>
 <body>
-{{- partial "nav.html" . }}
-<h1>Posts</h1>
-{{- range $index, $page := where .Pages "Layout" "ne" "about" }}
-  {{- $url := $page.RelPermalink }}
-  {{- $read_more := "Read more..." }}
-  {{- if $page.Params.external }}
-    {{- $url = $page.Params.external }}
-    {{- $host := (urls.Parse $url).Hostname }}
-    {{- $read_more = printf "Read on %s" $host }}
-  {{- end }}
-  {{- if $index }}<hr>{{ end }}
-  <a href="{{ $url }}"><h3>{{ $page.Title }}</h3></a>
-  <time datetime="{{ $page.Date | time.Format "2006-01-02" }}">
-    {{ $page.Date | time.Format ":date_medium" }}
-  </time>
-  <p class="description">{{ $page.Description }}</p>
-  <p>
-    <a{{ if $page.Params.external }} class="external"{{ end }} href="{{ $url }}">
-      {{ $read_more }}
-    </a>
-  </p>
+{{ partial "nav.html" . }}
+<h1>Denis Stebunov</h1>
+<img alt="Denis Stebunov" src="/photo.jpeg" width="200" height="200" style="margin-bottom: 1em">
+{{ .Content }}
+<p><br></p>
+{{- with (index (where .Pages "Layout" "ne" "about") 0) }}
+  <h2>The latest post <a href="/posts/">(see more...)</a></h2>
+  {{- partial "post-preview.html" . }}
 {{ end }}
+
 {{ partial "footer.html" . }}
 </body>
 </html>

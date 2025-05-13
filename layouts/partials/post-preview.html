@@ -1,0 +1,17 @@
+{{- $url := .RelPermalink }}
+{{- $read_more := "Read more..." }}
+{{- if .Params.external }}
+{{- $url = .Params.external }}
+{{- $host := (urls.Parse $url).Hostname }}
+{{- $read_more = printf "Read on %s" $host }}
+{{- end }}
+<a href="{{ $url }}"><h3>{{ .Title }}</h3></a>
+<time datetime="{{ .Date | time.Format "2006-01-02" }}">
+{{ .Date | time.Format ":date_medium" }}
+</time>
+<p class="description">{{ .Description }}</p>
+<p>
+<a{{ if .Params.external }} class="external"{{ end }} href="{{ $url }}">
+  {{ $read_more }}
+</a>
+</p>

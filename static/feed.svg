@@ -1,18 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg"
-     id="RSSicon"
-     viewBox="0 0 8 8" width="256" height="256">
-
-  <title>RSS feed icon</title>
-
-  <style type="text/css">
-    .button {stroke: none; fill: orange;}
-    .symbol {stroke: none; fill: white;}
-  </style>
-
-  <rect   class="button" width="8" height="8" rx="1.5" />
-  <circle class="symbol" cx="2" cy="6" r="1" />
-  <path   class="symbol" d="m 1,4 a 3,3 0 0 1 3,3 h 1 a 4,4 0 0 0 -4,-4 z" />
-  <path   class="symbol" d="m 1,2 a 5,5 0 0 1 5,5 h 1 a 6,6 0 0 0 -6,-6 z" />
-
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2002_5)">
+<rect width="28" height="28" fill="white"/>
+<g clip-path="url(#clip1_2002_5)">
+<path d="M22.75 0H5.25C2.35051 0 0 2.35051 0 5.25V22.75C0 25.6495 2.35051 28 5.25 28H22.75C25.6495 28 28 25.6495 28 22.75V5.25C28 2.35051 25.6495 0 22.75 0Z" fill="#FFA500"/>
+<path d="M7 24.5C8.933 24.5 10.5 22.933 10.5 21C10.5 19.067 8.933 17.5 7 17.5C5.067 17.5 3.5 19.067 3.5 21C3.5 22.933 5.067 24.5 7 24.5Z" fill="white"/>
+<path d="M3.5 14C6.28477 14 8.95549 15.1062 10.9246 17.0754C12.8938 19.0445 14 21.7152 14 24.5H17.5C17.5 20.787 16.025 17.226 13.3995 14.6005C10.774 11.975 7.21303 10.5 3.5 10.5V14Z" fill="white"/>
+<path d="M3.5 7C5.79813 7 8.07376 7.45265 10.197 8.33211C12.3202 9.21157 14.2493 10.5006 15.8744 12.1256C17.4994 13.7507 18.7884 15.6798 19.6679 17.803C20.5473 19.9262 21 22.2019 21 24.5H24.5C24.5 18.9305 22.2875 13.589 18.3492 9.65076C14.411 5.71249 9.06955 3.5 3.5 3.5V7Z" fill="white"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_2002_5">
+<rect width="28" height="28" fill="white"/>
+</clipPath>
+<clipPath id="clip1_2002_5">
+<rect width="28" height="28" fill="white"/>
+</clipPath>
+</defs>
 </svg>

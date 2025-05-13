@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{{- partial "meta.html" (dict
+    "title" .Site.Title
+    "description" "Thoughts about software development and engineering management"
+    "url" .Page.Permalink
+  ) }}
+  <link rel="alternate" type="application/rss+xml" title="Denis Stebunov&apos;s blog" href="/index.xml" />
+</head>
+<body>
+{{- partial "nav.html" . }}
+{{ .Content }}
+{{- range $index, $page := where site.RegularPages "Layout" "eq" "" }}
+  {{- if $index }}<hr>{{ end }}
+  {{- partial "post-preview.html" $page }}
+{{ end }}
+{{ partial "footer.html" . }}
+</body>
+</html>

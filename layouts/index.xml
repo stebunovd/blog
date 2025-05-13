@@ -1,5 +1,5 @@
 {{- $pages := (where .RegularPages "Params.external" nil).ByDate.Reverse }}
-{{- $pages = where $pages "Layout" "ne" "about" }}
+{{- $pages = where $pages "Layout" "eq" "" }}
 {{- if not hugo.IsDevelopment }}
   {{- $pages = where $pages "Params.sitemap.disable" "ne" true }}
 {{- end }}
