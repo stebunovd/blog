@@ -19,6 +19,6 @@ for my [personal blog](/posts/) here. I'm also making
 to new projects or content ideas—feel free to drop me a line at
 [denis@stebunov.com](mailto:denis@stebunov.com).
 
-## The latest video ([see more...](https://www.youtube.com/@ivelum/videos))
+## The latest talk ([see more...](https://www.youtube.com/@ivelum/videos))
 
-{{< youtube cgqMP9G6CEc >}}
+{{< youtube TR3TADaqeLg >}}
