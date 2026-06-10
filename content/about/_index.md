@@ -19,6 +19,20 @@ for my [personal blog](/posts/) here. I'm also making
 to new projects or content ideas—feel free to drop me a line at
 [denis@stebunov.com](mailto:denis@stebunov.com).
 
-## The latest talk ([see more...](https://www.youtube.com/@ivelum/videos))
+## The latest talks ([see more...](https://www.youtube.com/@ivelum/videos))
+
+{{< youtube H2siAQ5M5EE >}}
+
+*Estimates slow us down // DevOps Pro Europe 2026*
+
+---
+
+{{< youtube we6qFeXVJGA >}}
+
+*You might not need staging // DevOps Pro Europe 2026*
+
+---
 
 {{< youtube TR3TADaqeLg >}}
+
+*Zero-downtime deployment of web applications // Working Software Conference 2025*
