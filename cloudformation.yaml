@@ -52,6 +52,49 @@ Resources:
             Action: s3:GetObject
             Resource: !Sub '${WebsiteBucket.Arn}/*'
 
+  WebsiteRedirectFunction:
+    Type: AWS::CloudFront::Function
+    # The retained distribution still references this function if the stack is deleted.
+    DeletionPolicy: Retain
+    UpdateReplacePolicy: Retain
+    Properties:
+      Name: !Sub '${AWS::StackName}-redirects'
+      AutoPublish: true
+      FunctionConfig:
+        Comment: Exact-path redirects for the website
+        Runtime: cloudfront-js-2.0
+      FunctionCode: |
+        function handler(event) {
+            // Ignore trailing slashes in both request paths and redirect keys.
+            // Destinations may be local paths or full HTTPS URLs.
+            // Original query parameters are intentionally not forwarded.
+            var redirects = {
+                '/three-steps/': { location: 'https://ivelum.com/blog/three-steps/', statusCode: 301 },
+            };
+
+            var request = event.request;
+            var path = request.uri.replace(/\/+$/, '') || '/';
+            var paths = Object.keys(redirects);
+            var redirect;
+            for (var i = 0; i < paths.length; i++) {
+                if ((paths[i].replace(/\/+$/, '') || '/') === path) {
+                    redirect = redirects[paths[i]];
+                    break;
+                }
+            }
+            if (!redirect) {
+                return request;
+            }
+
+            return {
+                statusCode: redirect.statusCode,
+                statusDescription: redirect.statusCode === 302 ? 'Found' : 'Moved Permanently',
+                headers: {
+                    location: { value: redirect.location }
+                }
+            };
+        }
+
   WebsiteDistribution:
     Type: AWS::CloudFront::Distribution
     DeletionPolicy: Retain
@@ -80,6 +123,9 @@ Resources:
         DefaultCacheBehavior:
           TargetOriginId: !Ref WebsiteBucket
           ViewerProtocolPolicy: redirect-to-https
+          FunctionAssociations:
+            - EventType: viewer-request
+              FunctionARN: !GetAtt WebsiteRedirectFunction.FunctionMetadata.FunctionARN
           AllowedMethods:
             - GET
             - HEAD
